@@ -54,4 +54,9 @@ jobs:
               echo "Commit ke-$i pada $commit_date" >> logs/commit_$day.txt
               git add logs/commit_$day.txt
               GIT_COMMITTER_DATE="$commit_date 12:00:00" \
+              GIT_AUTHOR_DATE="$commit_date 12:00:00" \
+              git commit -m "Commit $i on $commit_date" || true
+            done
+          done
 
+          git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} HEAD:main
