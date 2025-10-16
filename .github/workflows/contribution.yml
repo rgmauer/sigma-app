@@ -36,7 +36,7 @@ jobs:
       - name: Setup Git identity
         run: |
           git config user.name "rgmauer"
-          git config user.email "236301556+uwakmusang4-rgb@users.noreply.github.com"
+          git config user.email "15880189+rgmauer@users.noreply.github.com"
 
       - name: Generate distributed commits
         env:
