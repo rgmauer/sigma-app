@@ -1,4 +1,3 @@
-
 name: Generate Commits, PRs & Issues
 
 on:
@@ -7,7 +6,7 @@ on:
       total_commits:
         description: "Jumlah total commit"
         required: true
-        default: "1500"
+        default: "1650"
       total_days:
         description: "Jumlah hari pembagian commit"
         required: true
